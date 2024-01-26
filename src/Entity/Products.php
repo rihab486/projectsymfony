@@ -13,8 +13,9 @@ use Doctrine\ORM\Mapping as ORM;
 #[ORM\Entity(repositoryClass: ProductsRepository::class)]
 class Products
 {
-    use SlugTrait ;
+   
     use CreatedAtTrait;
+    use SlugTrait ;
     
     #[ORM\Id]
     #[ORM\GeneratedValue]
